@@ -4,7 +4,7 @@ const config = {
   alias: {
     "@": path.resolve(__dirname, "..", "src/"),
   },
-  projectName: 'taro-antd',
+  projectName: 'taro-react',
   date: '2021-10-22',
   designWidth: 750,
   deviceRatio: {
