@@ -1,8 +1,8 @@
 {
-  "name": "taro-antd",
+  "name": "taro-react",
   "version": "1.0.0",
   "private": true,
-  "description": "taro+react+ahooks+antd-mobile",
+  "description": "",
   "templateInfo": {
     "name": "default",
     "typescript": true,
@@ -40,7 +40,7 @@
     "@tarojs/react": "3.3.10",
     "@tarojs/runtime": "3.3.10",
     "@tarojs/taro": "3.3.10",
-    "antd-mobile": "^5.0.0-beta.19",
+    "ahooks": "^2.10.11",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },

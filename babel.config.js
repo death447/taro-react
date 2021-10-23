@@ -6,15 +6,5 @@ module.exports = {
             framework: 'react',
             ts: true
         }]
-    ],
-    plugins: [
-        [
-            "import",
-            {
-                "libraryName": "antd-mobile",
-                "libraryDirectory": "es/components",
-                "style": false
-            }
-        ]
     ]
 }

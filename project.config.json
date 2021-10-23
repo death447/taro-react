@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "taro-antd",
-  "description": "taro+react+ahooks+antd-mobile",
+  "projectname": "taro-react",
+  "description": "",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,
