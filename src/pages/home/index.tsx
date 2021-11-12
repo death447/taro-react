@@ -1,15 +1,32 @@
 import {useState} from 'react';
+import { Popup, Button } from '@parallel-line/mobile'
 
 
 const Home = () => {
-    const [value, setValue] = useState<string>('');
-    global.event$.useSubscription(val => {
-        setValue(val)
-    })
+    const [visible1, setVisible1] = useState(false)
+
     return (
        <div>
-           <div>这就是首页</div>
-           {value}
+
+           <Button
+               color="primary"
+               onClick={() => {
+                   setVisible1(true)
+               }}
+           >
+               展开弹出层1
+           </Button>
+           <Popup
+               visible={visible1}
+               onMaskClick={() => {
+                   setVisible1(false)
+               }}
+               bodyStyle={{ height: '20vh' }}
+           >
+               <div style={{ padding: '24px' }}>
+                   <div>这是弹出层2</div>
+               </div>
+           </Popup>
        </div>
     );
 };

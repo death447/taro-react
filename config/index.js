@@ -44,8 +44,19 @@ const config = {
           namingPattern: 'global',
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
-      }
-    }
+      },
+    },
+    lessLoaderOption: {
+      lessOptions: {
+        javascriptEnabled: true,
+        modifyVars: {
+          '@pxx-hd': '2', //改为pxx-hd  预防以后冲突
+          '@pxx-hdx': '@pxx-hd*1px',
+          '@pxxm-prefix': 'pxxm',
+          '@html-selector': 'page', //为各种各样的小程序准备
+        },
+      },
+    },
   },
   h5: {
     publicPath: '/',
